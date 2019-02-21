@@ -9,4 +9,3 @@ workflows:
     jobs:
       - ci-agent/sandbox-init
       - ci-agent/code-sniffer
-
