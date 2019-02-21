@@ -1,11 +1,11 @@
 version: 2.1
 
 orbs:
-    sandbox: test-orb/sandbox-init@dev:0.1
+    ci-agent: docksal/ci-agent@dev:0.1
 
 workflows:
   version: 2
   default-workflow:
     jobs:
-      - sandbox/sandbox-init
-
+      - ci-agent/sandbox-init
+      - ci-agent/code-sniffer
